@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body{
+  background: black;
+  color: white;
+}
+.FlexBetween {
+  @apply flex flex-row justify-between items-center 
+}
+.primaryGreenBtn {
+  @apply w-max h-max bg-green-500 px-4 py-2 rounded hover:bg-green-600 transition duration-500 ease-in-out
+}
+.primaryEmeraldBtn {
+  @apply w-max h-max bg-emerald-500 px-4 py-2 rounded hover:bg-emerald-600 transition duration-500 ease-in-out
+}
+.primaryZincBtn {
+  @apply w-max h-max bg-zinc-700 px-4 py-2 rounded hover:bg-emerald-600 transition duration-500 ease-in-out
+}
+.flexBox {
+  @apply flex justify-center items-center
+}
+.animationBtn {
+  @apply hover:-translate-y-1 hover:scale-110
+}
+.card{
+  @apply w-96 bg-white text-black shadow-md rounded-md
+}
+.option{
+  @apply w-fit border border-gray-400 py-1.5 px-3 rounded-full flex items-center gap-2
+}
+.closeIcon{
+  @apply text-xl text-gray-500 
+}
+.add{
+  @apply bg-green-500 hover:bg-green-600 text-white
+}
+.gradient-title{
+  background : linear-gradient(to bottom , #194c33, #bbb);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.input{
+  @apply w-5 h-5 m-2.5 rounded-xl cursor-pointer align-middle;
+}
+.input:checked {
+  -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
+  -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
+}
+.input:active {
+  -webkit-transform: scale(1.5);
+}
+/* inputFile */
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: #22c55e;
+  padding: .25em .5em;
+  display: inline-block;
+  @apply rounded-sm hover:bg-green-600 transition duration-500
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: ;
+}
